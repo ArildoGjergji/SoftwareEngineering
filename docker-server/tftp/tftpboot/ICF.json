@@ -1,0 +1,34 @@
+{
+  "serverTable" : {
+    "RA_CA" : {
+      "inet" : "10.0.0.2",
+      "inet6" : "",
+      "tcpPort" : "8093",
+      "protocol" : "http",
+      "username" : "RACAUser",
+      "password" : "RACAPassword"
+    },
+    "SMRS" : {
+      "inet" : "10.42.169.8",
+      "inet6" : "",
+      "tcpPort" : "",
+      "protocol" : "tftp",
+      "username" : "",
+      "password" : ""
+    },
+    "MS" : {
+      "inet" : "10.0.0.3",
+      "inet6" : "fe80::4c7f:1ff:fe74:ba8b",
+      "tcpPort" : "162",
+      "protocol" : "snmp",
+      "username" : "MSUser",
+      "password" : "MSPassword"
+    }
+  },
+  "configuration" : {
+    "softwarePackage" : "CXP9035658_10_R1AD21Q10109.zip",
+    "configScript" : "ConfigNodeA.txt",
+    "configScriptDestPath" : "/mnt/config/config-scripts",
+    "trustedCertificates" : [ "pki-ra-tdps/ca_entity/ENM_PKI_Root_CA/5094675d722fe76c/active/ENM_PKI_Root_CA", "pki-ra-tdps/ca_entity/ENM_Infrastructure_CA/3ad39bed30ea7ba8/active/ENM_PKI_Root_CA", "pki-ra-tdps/ca_entity/ENM_OAM_CA/323a959159562dfc/active/ENM_Infrastructure_CA", "pki-ra-tdps/ca_entity/NE_OAM_CA/2f73eaf52567b638/active/ENM_PKI_Root_CA" ]
+  }
+}

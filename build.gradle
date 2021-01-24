@@ -1,0 +1,37 @@
+plugins {
+  id 'java'
+}
+
+group 'unige.zerotouch'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+
+}
+
+
+dependencies {
+
+  compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.1'
+}
+
+
+jar {
+  manifest {
+    attributes "Main-Class": "TestCode"
+  }
+
+  from {
+    configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
+
+clean {
+    delete 'out'
+}
+

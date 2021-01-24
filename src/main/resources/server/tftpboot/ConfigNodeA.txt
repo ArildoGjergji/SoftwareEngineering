@@ -1,0 +1,4 @@
+config
+mgmt-ip-edit ipv4-addr 10.42.169.29 ipv4-netmask 255.255.255.0 ipv4-gateway-addr 10.42.169.254
+commit
+end
